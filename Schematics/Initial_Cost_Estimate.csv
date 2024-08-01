@@ -1,0 +1,23 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,9955.04,119460.48,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Initial Estimate,US East (N. Virginia),,Amazon Route 53,0,23,276.00,USD,,"Hosted Zones (1), Basic Checks Within AWS (30)"
+Initial Estimate,US East (N. Virginia),,Amazon CloudFront,0,575,6900.00,USD,,"Data transfer out to internet (5000 GB per month), Number of requests (HTTPS) (50000000 per month), Data transfer out to origin (5000 GB per month)"
+Initial Estimate,US East (N. Virginia),,S3 Standard,0,1238.5,14862.00,USD,,"S3 Standard storage (50000 GB per month), PUT, COPY, POST, LIST requests to S3 Standard (3000000), GET, SELECT, and all other requests from S3 Standard (15000000), Data returned by S3 Select (25000 GB per month), Data scanned by S3 Select (25000 GB per month)"
+Initial Estimate,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,,"DT Inbound: Internet (5000 GB per month), DT Outbound: Amazon CloudFront (5000 GB per month)"
+Initial Estimate,US East (N. Virginia),,VPN Connection,0,0,0.00,USD,,Working days per month (22)
+Initial Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,44.1,529.20,USD,,Number of NAT Gateways (1)
+Initial Estimate,US East (N. Virginia),,Gateway Load Balancer,0,717.23,8606.76,USD,,"Number of Availability Zones that Gateway Load Balancer is deployed to (1), Number of Gateway Load Balancer Endpoints (2), Total processed bytes (100 GB per hour), Average number of new connections/flows (5000 per second), Average connection/flow duration (30 minutes)"
+Initial Estimate,US East (N. Virginia),,Amazon EC2 ,0,3399.5808,40794.97,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (c6id.4xlarge), Pricing strategy ( 1yr  No Upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Initial Estimate,US East (N. Virginia),,Application Load Balancer,0,733.65,8803.80,USD,,Number of Application Load Balancers (2)
+Initial Estimate,US East (N. Virginia),,Amazon RDS for PostgreSQL,0,3223.98,38687.76,USD,,"Storage amount (5000 GB), Storage volume (General Purpose SSD (gp2)), Nodes (1), Instance Type (db.m1.large), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (2000 GB), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for total retention (per vCPU per month) (2.19), Cost for each additional month of retention (per vCPU per month) (0.0631000000), Total Size of Backup Processed for Export (GB) (150000 per month)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
